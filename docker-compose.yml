@@ -1,0 +1,11 @@
+services:
+  ocr_api:
+    build: .
+    container_name: ocr_fastapi_v3
+
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    restart: always
+
